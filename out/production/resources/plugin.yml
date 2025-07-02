@@ -1,0 +1,19 @@
+name: WebhookChatFilter
+version: '1.0-SNAPSHOT'
+main: com.ooqe.webhookChatFilter.WebhookChatFilter
+api-version: '1.21'
+commands:
+  blockword:
+    description: Adds a word to the blocklist
+    usage: /blockword <word>
+    permission: staff.manage
+
+  unblockword:
+    description: Removes a word from the blocklist
+    usage: /unblockword <word>
+    permission: staff.manage
+
+permissions:
+  staff.manage:
+    description: Allows staff to manage blocked words
+    default: false
